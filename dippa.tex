@@ -1,42 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                                                %%
-%% Esimerkki opinnäytteen tekemisestä LaTeX:lla 20120320          %%
-%% Alkuperäinen versio Luis Costa,  muutokset Perttu Puska        %%
-%%                                                                %%
-%% Tähän esimerkkiin kuuluu tiedostot                             %%
-%%               opinnaytepohja.tex (versio 1.6)                  %%
-%%               aaltothesis.sty (versio 1.6)                     %%
-%%               kuva1.eps                                        %%
-%%               kuva2.eps                                        %%
-%%                                                                %%
-%%                                                                %%
-%% Kääntäminen                                                    %%
-%% latex:                                                         %%
-%%             $ latex opinnaytepohja                             %%
-%%             $ latex opinnaytepohja                             %%
-%%                                                                %%
-%%   Tuloksena on tiedosto opinnayte.dvi, joka                    %%
-%%   muutetaan ps-muotoon seuraavasti                             %%
-%%                                                                %%
-%%             $ dvips opinnaytepohja -o                          %%
-%%                                                                %%
-%% Selittävät kommentit on tässä esimerkissä varustettu           %%
-%% %%-merkeillä ja muutokset, joita käyttäjä voi tehdä,           %%
-%% on varustettu %-merkeillä                                      %%
-%%                                                                %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% Käytä toinen näistä, jos kirjoitat suomeksi:
-%% ensimmäinen, jos käytät pdflatexia (kuvat on oltava pdf-tiedostoina)
-%% toinen, jos haluat tuottaa ps-tiedostoa (käytä eps-formaattia kuville).
-%%
-%% Use one of these you write in Finnish:
-%% the 1st when using pdflatex (use pdf figures) or
-%% the 2nd when producing a ps file (use eps figures).
-\documentclass[finnish,12pt,a4paper,pdftex]{article}
-%\documentclass[finnish,12pt,a4paper,dvips]{article}
+\documentclass[english,12pt,a4paper,pdftex]{article}
 
 %% Nämä komennot asettavat oikean tekstiencodauksen.
 \usepackage[utf8]{inputenc}
@@ -48,18 +10,12 @@
 
 \usepackage{verbatim}
 
-%% Käytä näitä, jos kirjoitat englanniksi
-%%
-%% Uncomment one of these if you write in English
-%\documentclass[english,12pt,a4paper,pdftex]{article}
-%\documentclass[english,12pt,a4paper,dvips]{article}
-
 %% Tämä paketti on pakollinen
 %% Valitse korkeakoulusi näistä: arts, biz, chem, elec, eng, sci.
 %%
 %% This package is required
 %% Choose your school from arts, biz, chem, elec, eng, sci.
-\usepackage[elec]{aaltothesis}
+\usepackage[sci]{aaltothesis}
 
 %% Jos käytät latex-komentoa käännettäessä (oletusarvo) 
 %% kuvat kannattaa tehdä eps-muotoon. Älä käytä ps-muotoisia kuvia!
