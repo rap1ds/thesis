@@ -385,19 +385,21 @@ Traditionally, the so called \emph{waterfall} type process model has been predom
 \end{figure}
 
 
-Waterfall model has been extremely challenging from feedback perspective. Due to the sequential nature of the process the testing happens after the implementation phase is completed. Depending on the software size the implementation can take from several months to several years. In practice this means that the development team may work months after months without receiving feedback about the product. In addition because the product is taken into operation after the testing phase is done, the development team might never receive any feedback from the real end-users of the product before the maintanance phase.
+Waterfall model has been extremely challenging from feedback perspective. Due to the sequential nature of the process the testing and operation phases happen after the implementation phase is completed. Depending on the size and complexity of the software the implementation can take from several months to several years. In practice this means that the development team may work months after months without receiving feedback about the product. In addition, because the product is taken into operation after the testing phase is done, the development team might never receive any feedback from the real end-users of the product before the maintanance phase.
 
-Waterfall type of development traditionally relies heavily on contract negotiations. First, the requirements for the product are gathered together with the customer and the supplier. After that, a contract is signed between both parties. The supplier promises to deliver working piece of software with the agreed features due the given deadline. In general, no changes to the project scope are made after the signing of the contract. However, if customer wants to add or remove features agreed on the contract, a high cost "change request" has to be made \citep{beck2004}. 
+Waterfall development relies heavily on contract negotiations. Contracts with fixed scope, time and budget do not spur feedback communication between customer and supplier. The reason for this is that there is no need to communication or feedback during the development, since all the details have been agreed and written down to the contract. 
 
-From feedback point-of-view, the customer may not have any visibility on the actual product before the agreed delivery deadline. Thus, the customer is unable to provide any feedback during the development and testing phases. Due to the lack of feedback during the implementation and testing the customer may face unwanted surprises when the product is delivered.
+Before a fixed contract project starts, the requirements for the product are gathered together with the customer and the supplier. After that, a contract is signed between both parties. The supplier promises to deliver working piece of software with the agreed features due the given deadline. In general, no changes to the project scope are made after the signing of the contract. However, if customer wants to add or remove features agreed on the contract, a high cost "change request" has to be made \citep{beck2004}. 
+
+From feedback point-of-view, in the worst case the customer may not have any visibility on the actual product before the agreed delivery deadline. Thus, the customer is unable to provide any feedback during the development and testing phases. Due to the lack of feedback during the implementation and testing the customer may face unwanted surprises when the product is delivered.
 
 To address this issue, agile development relies on intense communication and fast and frequent feedback cycles between customer and supplier. Instead of long-time fixed scope and fixed time contracts, agile development relies on negotiated scope contracts as a mechanism for aligning the interests of supplier and customer to encourage communication and feedback \citep{beck2004}.
 
 Instead of sequential type of process the work in agile development is done iteratively. Each iteration contains all the phases introduced in waterfall process from requirements gathering to testing. However, the duration of an iteration is not measured in years, instead in weeks. At the end of the iteration a potentially shippable software increment is deployed \citep{shore2007}.
 
-The planning and requirement gather in agile processes is done before each iteration. The amount of planning is minimal. The detailed planning is done in such manner that, just enough is planned to complete the next iteration. The planning in agile processes is also reactive. Based on the feedback from users, results of user-testing or changes on the business environment, the plans can be change during the project. 
+The planning and requirement gathering in agile processes is done before each iteration. The amount of planning is minimal. The detailed planning is done in such manner that just enough is planned to complete the next iteration. The planning in agile processes is also reactive. Based on the feedback from users, results of user-testing, feedback from the previous iteration result or changes on the business environment, the plans can change during the project. 
 
-Iterative development opens new possibilities to customer to give feedback. After each iteration the customer is able to try the deployed product increment and give feedback about it and thus guide the development team. However, this is not only an opportunity, it is also a requirement. Successful agile project demands extensive amount of feedback from customer.
+Iterative development opens new possibilities to customer to give feedback. After each iteration the customer is able to try out the deployed product increment and give feedback about it and thus guide the development team. However, this is not only an opportunity, it is also a requirement. Successful agile project demands extensive amount of feedback from customer.
 
 \begin{figure}[htb]
 \begin{center}
@@ -407,7 +409,7 @@ Iterative development opens new possibilities to customer to give feedback. Afte
 \label{fig:iterative_and_incremental}
 \end{figure}
 
-In this thesis the key characteristic about agile development is that the development is iterative and a product increment is deployed after each iteration. There are various different agile development models, such as Scrum and Extreme Programming (XP), but from the perspective of this thesis the details of the model do not matter, as long as it is an iterative development model.
+In this thesis the key characteristic about agile development is that the development is iterative and a product increment is deployed after each iteration. There are various different agile development models, such as \emph{Scrum} and \emph{Extreme Programming} (XP), but from the perspective of feedback communication and this thesis the details of the model do not make much difference, as long as the model is an iterative development model.
 
 \subsection{Communication in agile software projects}
 
