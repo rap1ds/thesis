@@ -61,26 +61,6 @@
 \setlength{\topmargin}{25mm-\headheight-\headsep}
 \setlength{\textheight}{23cm}
 
-
-\usepackage{libertine}
-\usepackage{graphicx}
-\usepackage[svgnames]{xcolor}
-\usepackage{framed}
-
-\newcommand*\openquote{\makebox(25,-22){\scalebox{5}{``}}}
-\newcommand*\closequote{\makebox(25,-22){\scalebox{5}{''}}}
-\colorlet{shadecolor}{Azure}
-
-\makeatletter
-\newif\if@right
-\def\shadequote{\@righttrue\shadequote@i}
-\def\shadequote@i{\begin{snugshade}\begin{quote}\openquote}
-\def\endshadequote{%
-  \if@right\hfill\fi\closequote\end{quote}\end{snugshade}}
-\@namedef{shadequote*}{\@rightfalse\shadequote@i}
-\@namedef{endshadequote*}{\endshadequote}
-\makeatother
-
 %% Kaikki mikä paperille tulostuu, on tämän jälkeen
 %%
 %% Output starts here
