@@ -1105,7 +1105,9 @@ A special kind of site capturing technique was used to accomplish the capturing 
 
 \subsection{Application architecture}
 
-Hannotaatio is implemented using mainly JavaScript and Ruby On Rails. The editor and capturer are implemented with JavaScript and HTML5. For old browser compatibility, some parts of the capturer utilizes Adobe Flash for capturing images with browsers that do not support HTML5 Canvas elements. Hannotaatio backend is implemented with Ruby On Rails. The captured sources, such as DOM source, CSS styles and images are stored to file system, but information about saved feedback, notification emails and such are saved to MySQL database. The backend implements RESTful API. The API uses JSON format to transfer data between the front-end application and the backend.
+Hannotaatio is implemented using mainly JavaScript and Ruby On Rails. The editor and capturer are implemented with JavaScript and HTML5. For old browser compatibility, some parts of the capturer utilizes Adobe Flash for capturing images with browsers that do not support HTML5 Canvas elements. The editor uses popular JavaScript library Raphael.js for the drawings. Raphael.js is the most used library for vector graphics in JavaScript.
+
+Hannotaatio backend is implemented with Ruby On Rails. The captured sources, such as DOM source, CSS styles and images are stored to file system, but information about saved feedback, notification emails and such are saved to MySQL database. The backend implements RESTful API. The API uses JSON format to transfer data between the front-end application and the backend.
 
 There are two main parts in Hannotaatio's architecture: capturer and editor. The capturer is a JavaScript snippet, which needs to be injected to the website from which the feedback will be given. The website author is responsible to inject Hannotaatio capturer to the website. When the capturer is injected, a small "I love feedback" button will appers to the upper right corner of the website. When the button is clicked the capturer start to work. 
 
