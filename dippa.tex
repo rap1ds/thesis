@@ -1103,6 +1103,8 @@ Usability was one of the main design perspective when requirements to Hannotaati
 
 A special kind of site capturing technique was used to accomplish the capturing without any browser plugins. Taking a screenshot image requires external browser plugins, such as Java applets or browser add-ons. However, Hannotaatio does not take screenshot, even though the end result looks like screenshot image. Instead, Hannotaatio saves the current DOM-tree of the page and associated CSS-styles. The DOM source and CSS styles are saved to Hannotaatio servers and when user views the feedback, the site is rerendered with the saved source.
 
+\subsection{Application architecture}
+
 There are two main parts in Hannotaatio's architecture: capturer and editor. The capturer is a JavaScript snippet, which needs to be injected to the website from which the feedback will be given. The website author is responsible to inject Hannotaatio capturer to the website. When the capturer is injected, a small "I love feedback" button will appers to the upper right corner of the website. When the button is clicked the capturer start to work. 
 
 The capturer captures the current DOM tree and associated CSS style definitions. The captured DOM source and styles are sent to the Hannotaatio backend server and user is redirected to the editor site.
