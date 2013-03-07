@@ -75,17 +75,20 @@
     long = application programming interface, 
     alt = Application Programming Interface
 }
-
 \DeclareAcronym{MRT}{
     short = MRT,
     long = media richness theory, 
     alt = Media Richness Teory
 }
-
 \DeclareAcronym{CAT}{
     short = CAT,
     long = compensatory adaptation theory,
     alt = Compensatory Adaptation Theory
+}
+\DeclareAcronym{CSS}{
+    short = CSS,
+    long = cascading style sheets,
+    alt = Cascading Style Sheets
 }
 
 %% Kaikki mikä paperille tulostuu, on tämän jälkeen
@@ -302,7 +305,7 @@ Helsinki, 4.3.2013
 \begin{tabular}{ll}
 \acs{API}   & \aca{API} \\
 \acs{CAT}   & \aca{CAT} \\
-CSS         & Cascading Style Sheets \\
+\acs{CSS}   & \aca{CSS} \\
 DOM         & Document Object Model \\
 IM          & Instant Messaging \\
 MFT         & Media Fitness Theory \\
@@ -1154,7 +1157,7 @@ After the installation of Hannotaatio the website user is able to capture the we
 
 Usability was one of the main design perspective when requirements to Hannotaatio were gathered. Hannotaatio works without any browser plugins or any other installations. In other words, the customer does not have to install anything to be able to use Hannotaatio. This lowers the barrier to start using Hannotaatio first time.
 
-A special kind of site capturing technique was used to accomplish the capturing without any browser plugins. Taking a screenshot image requires external browser plugins, such as Java applets or browser add-ons. However, Hannotaatio does not take screenshot, even though the end result looks like screenshot image. Instead, Hannotaatio saves the current DOM-tree of the page and associated CSS-styles. The DOM source and CSS styles are saved to Hannotaatio servers and when user views the feedback, the site is rerendered with the saved source.
+A special kind of site capturing technique was used to accomplish the capturing without any browser plugins. Taking a screenshot image requires external browser plugins, such as Java applets or browser add-ons. However, Hannotaatio does not take screenshot, even though the end result looks like screenshot image. Instead, Hannotaatio saves the current DOM-tree of the page and associated \ac{CSS} styles. The DOM source and CSS styles are saved to Hannotaatio servers and when user views the feedback, the site is rerendered with the saved source.
 
 \subsection{Application architecture}
 
