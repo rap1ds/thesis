@@ -90,6 +90,11 @@
     long = cascading style sheets,
     alt = Cascading Style Sheets
 }
+\DeclareAcronym{DOM}{
+    short = DOM,
+    long = document object model,
+    alt = Document Object Model
+}
 
 %% Kaikki mikä paperille tulostuu, on tämän jälkeen
 %%
@@ -306,7 +311,7 @@ Helsinki, 4.3.2013
 \acs{API}   & \aca{API} \\
 \acs{CAT}   & \aca{CAT} \\
 \acs{CSS}   & \aca{CSS} \\
-DOM         & Document Object Model \\
+\acs{DOM}   & \aca{DOM} \\
 IM          & Instant Messaging \\
 MFT         & Media Fitness Theory \\
 MNT         & Media Naturalness Theory \\
@@ -1157,19 +1162,19 @@ After the installation of Hannotaatio the website user is able to capture the we
 
 Usability was one of the main design perspective when requirements to Hannotaatio were gathered. Hannotaatio works without any browser plugins or any other installations. In other words, the customer does not have to install anything to be able to use Hannotaatio. This lowers the barrier to start using Hannotaatio first time.
 
-A special kind of site capturing technique was used to accomplish the capturing without any browser plugins. Taking a screenshot image requires external browser plugins, such as Java applets or browser add-ons. However, Hannotaatio does not take screenshot, even though the end result looks like screenshot image. Instead, Hannotaatio saves the current DOM-tree of the page and associated \ac{CSS} styles. The DOM source and \ac{CSS} styles are saved to Hannotaatio servers and when user views the feedback, the site is rerendered with the saved source.
+A special kind of site capturing technique was used to accomplish the capturing without any browser plugins. Taking a screenshot image requires external browser plugins, such as Java applets or browser add-ons. However, Hannotaatio does not take screenshot, even though the end result looks like screenshot image. Instead, Hannotaatio saves the current \ac{DOM} tree of the page and associated \ac{CSS} styles. The DOM source and \ac{CSS} styles are saved to Hannotaatio servers and when user views the feedback, the site is rerendered with the saved source.
 
 \subsection{Application architecture}
 
 Hannotaatio is implemented using mainly JavaScript and Ruby On Rails. The editor and capturer are implemented with JavaScript and HTML5. For old browser compatibility, some parts of the capturer utilizes Adobe Flash for capturing images with browsers that do not support HTML5 Canvas elements. The editor uses popular JavaScript library Raphael.js for the drawings. Raphael.js is the most used library for vector graphics in JavaScript.
 
-Hannotaatio backend is implemented with Ruby On Rails. The captured sources, such as DOM source, \ac{CSS} styles and images are stored to file system, but information about saved feedback, notification emails and such are saved to MySQL database. The backend implements RESTful \ac{API}. The \ac{API} uses JSON format to transfer data between the front-end application and the backend.
+Hannotaatio backend is implemented with Ruby On Rails. The captured sources, such as \ac{DOM} source, \ac{CSS} styles and images are stored to file system, but information about saved feedback, notification emails and such are saved to MySQL database. The backend implements RESTful \ac{API}. The \ac{API} uses JSON format to transfer data between the front-end application and the backend.
 
 There are two main parts in Hannotaatio's architecture: capturer and editor. The capturer is a JavaScript snippet, which needs to be injected to the website from which the feedback will be given. The website author is responsible to inject Hannotaatio capturer to the website. When the capturer is injected, a small "I love feedback" button will appers to the upper right corner of the website. When the button is clicked the capturer start to work. 
 
-The capturer captures the current DOM tree and associated \ac{CSS} style definitions. The captured DOM source and styles are sent to the Hannotaatio backend server and user is redirected to the editor site.
+The capturer captures the current \ac{DOM} tree and associated \ac{CSS} style definitions. The captured \ac{DOM} source and styles are sent to the Hannotaatio backend server and user is redirected to the editor site.
 
-The editor is responsible of loading the saved DOM tree and \ac{CSS} styles from backend server. The source is then rendered in a iframe container. On top of the iframe container, a drawing canvas is created. The canvas allows user to draw the feedback and save it for sharing.
+The editor is responsible of loading the saved \ac{DOM} tree and \ac{CSS} styles from backend server. The source is then rendered in a iframe container. On top of the iframe container, a drawing canvas is created. The canvas allows user to draw the feedback and save it for sharing.
 
 The process of capturing the website and drawing the feedback on editor is described in figure~\ref{fig:hannotaatio_architecture}.
 
