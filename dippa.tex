@@ -1163,13 +1163,13 @@ A special kind of site capturing technique was used to accomplish the capturing 
 
 Hannotaatio is implemented using mainly JavaScript and Ruby On Rails. The editor and capturer are implemented with JavaScript and HTML5. For old browser compatibility, some parts of the capturer utilizes Adobe Flash for capturing images with browsers that do not support HTML5 Canvas elements. The editor uses popular JavaScript library Raphael.js for the drawings. Raphael.js is the most used library for vector graphics in JavaScript.
 
-Hannotaatio backend is implemented with Ruby On Rails. The captured sources, such as DOM source, CSS styles and images are stored to file system, but information about saved feedback, notification emails and such are saved to MySQL database. The backend implements RESTful \ac{API}. The \ac{API} uses JSON format to transfer data between the front-end application and the backend.
+Hannotaatio backend is implemented with Ruby On Rails. The captured sources, such as DOM source, \ac{CSS} styles and images are stored to file system, but information about saved feedback, notification emails and such are saved to MySQL database. The backend implements RESTful \ac{API}. The \ac{API} uses JSON format to transfer data between the front-end application and the backend.
 
 There are two main parts in Hannotaatio's architecture: capturer and editor. The capturer is a JavaScript snippet, which needs to be injected to the website from which the feedback will be given. The website author is responsible to inject Hannotaatio capturer to the website. When the capturer is injected, a small "I love feedback" button will appers to the upper right corner of the website. When the button is clicked the capturer start to work. 
 
-The capturer captures the current DOM tree and associated CSS style definitions. The captured DOM source and styles are sent to the Hannotaatio backend server and user is redirected to the editor site.
+The capturer captures the current DOM tree and associated \ac{CSS} style definitions. The captured DOM source and styles are sent to the Hannotaatio backend server and user is redirected to the editor site.
 
-The editor is responsible of loading the saved DOM tree and CSS styles from backend server. The source is then rendered in a iframe container. On top of the iframe container, a drawing canvas is created. The canvas allows user to draw the feedback and save it for sharing.
+The editor is responsible of loading the saved DOM tree and C\ac{CSS}SS styles from backend server. The source is then rendered in a iframe container. On top of the iframe container, a drawing canvas is created. The canvas allows user to draw the feedback and save it for sharing.
 
 The process of capturing the website and drawing the feedback on editor is described in figure~\ref{fig:hannotaatio_architecture}.
 
