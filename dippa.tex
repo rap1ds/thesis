@@ -1211,7 +1211,7 @@ Hannotaatio is implemented using mainly JavaScript and Ruby On Rails. The editor
 
 Hannotaatio backend is implemented with Ruby On Rails. The captured sources, such as \ac{DOM} source, \ac{CSS} styles and images are stored to file system, but information about saved feedback, notification emails and such are saved to MySQL database. The backend implements RESTful \ac{API}. The \ac{API} uses JSON format to transfer data between the front-end application and the backend.
 
-There are two main parts in Hannotaatio's architecture: capturer and editor. The capturer is a JavaScript snippet, which needs to be injected to the website from which the feedback will be given. The website author is responsible to inject Hannotaatio capturer to the website. When the capturer is injected, a small "I love feedback" button will appears to the upper right corner of the website. When the button is clicked the capturer start to work. 
+There are two main parts in Hannotaatio's architecture: capturer and editor. The capturer is a JavaScript snippet, which needs to be injected to the website from which the feedback will be given. The website author is responsible to inject Hannotaatio capturer to the website. When the capturer is injected, a small "I love feedback" button will appears to the upper right corner of the website. When the button is clicked, the capturer starts to work. 
 
 The capturer captures the current \ac{DOM} tree and associated \ac{CSS} style definitions. The captured \ac{DOM} source and styles are sent to the Hannotaatio backend server and user is redirected to the editor site.
 
