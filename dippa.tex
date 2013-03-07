@@ -294,7 +294,7 @@ Helsinki, 4.3.2013
 \subsection*{Abbreviations}
 
 \begin{tabular}{ll}
-\acs{API}   & \aca{API} \\
+\acs{API}   & \aca{\ac{API}} \\
 CAT         & Compensatory Adaptation Theory \\
 CSS         & Cascading Style Sheets \\
 DOM         & Document Object Model \\
@@ -1154,7 +1154,7 @@ A special kind of site capturing technique was used to accomplish the capturing 
 
 Hannotaatio is implemented using mainly JavaScript and Ruby On Rails. The editor and capturer are implemented with JavaScript and HTML5. For old browser compatibility, some parts of the capturer utilizes Adobe Flash for capturing images with browsers that do not support HTML5 Canvas elements. The editor uses popular JavaScript library Raphael.js for the drawings. Raphael.js is the most used library for vector graphics in JavaScript.
 
-Hannotaatio backend is implemented with Ruby On Rails. The captured sources, such as DOM source, CSS styles and images are stored to file system, but information about saved feedback, notification emails and such are saved to MySQL database. The backend implements RESTful API. The API uses JSON format to transfer data between the front-end application and the backend.
+Hannotaatio backend is implemented with Ruby On Rails. The captured sources, such as DOM source, CSS styles and images are stored to file system, but information about saved feedback, notification emails and such are saved to MySQL database. The backend implements RESTful \ac{API}. The \ac{API} uses JSON format to transfer data between the front-end application and the backend.
 
 There are two main parts in Hannotaatio's architecture: capturer and editor. The capturer is a JavaScript snippet, which needs to be injected to the website from which the feedback will be given. The website author is responsible to inject Hannotaatio capturer to the website. When the capturer is injected, a small "I love feedback" button will appers to the upper right corner of the website. When the button is clicked the capturer start to work. 
 
@@ -1180,7 +1180,7 @@ An easy installation of Hannotaatio was one of the main goals for the product. C
 
 The installation of Hannotaatio requires minimal amount of coding and configuration. In the simplest case user does not have to do anything else that copy the seven line code snippet provided in Hannotaatio website to user's own site \citep{hannotaatio}.
 
-For advanced users, there is a possibility to create an API key. The purpose of the API is to collect email addresses of the users show that they can be informed about upcoming updates and downtimes.
+For advanced users, there is a possibility to create an \ac{API} key. The purpose of the \ac{API} is to collect email addresses of the users show that they can be informed about upcoming updates and downtimes.
 
 There is also a possibility for advanced users change the default site capturing settings, e.g. turn on the image capturing. This allows smooth use of Hannotaatio even with private websites that are protected by passwords or firewalls.
 
