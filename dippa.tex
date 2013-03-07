@@ -95,6 +95,11 @@
     long = document object model,
     alt = Document Object Model
 }
+\DeclareAcronym{IM}{
+    short = IM,
+    long = instant messaging,
+    alt = Instant Messaging
+}
 
 %% Kaikki mikä paperille tulostuu, on tämän jälkeen
 %%
@@ -312,7 +317,7 @@ Helsinki, 4.3.2013
 \acs{CAT}   & \aca{CAT} \\
 \acs{CSS}   & \aca{CSS} \\
 \acs{DOM}   & \aca{DOM} \\
-IM          & Instant Messaging \\
+\acs{IM}    & \aca{IM} \\
 MFT         & Media Fitness Theory \\
 MNT         & Media Naturalness Theory \\
 \acs{MRT}   & \aca{MRT} \\
@@ -889,7 +894,7 @@ I-6 Expressive power & (1) Text: ABcCdD (printed, digitalized, not formatted or 
 % than the plain LaTeX2e tabular which is used here.
 \begin{tabular}{|p{2.5cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|}
 \hline
-\textbf{} & \textbf{Fax} & \textbf{Tel.} & \textbf{Email} & \textbf{IM} & \textbf{VCS} & \textbf{FtF} \\
+\textbf{} & \textbf{Fax} & \textbf{Tel.} & \textbf{Email} & \textbf{\ac{IM}} & \textbf{VCS} & \textbf{FtF} \\
 \hline
 \textbf{Response time} & 1 & 0 & 1 & 0 & 0 & 0 \\
 \hline
@@ -1267,7 +1272,7 @@ The transmission speed of email is instant, but because getting a response to em
 
 In Hannotaatio there is a possibility to use notification emails. If notification emails are used, the notification is sent to the team automatically right after the customer has published the feedback. This feature slightly improves the transmission speed because it eliminates one manual email sending from the whole feedback process.
 
-Hannotaatio supports high \textbf{parallelism}. Because giving feedback with Hannotaatio does not require shared time and location with the feedback receiving team, customer can have many simultaneous feedback conversations at the same time. In the other words this means that customer can give feedback with Hannotaatio at the same time when shes chatting with the team with an instant messaging tool. However, it must be noted that drawing the feedback requires some concentration from the customer, so even if it is possible to have multiple conversions at the same time, it may not be very pleasent.
+Hannotaatio supports high \textbf{parallelism}. Because giving feedback with Hannotaatio does not require shared time and location with the feedback receiving team, customer can have many simultaneous feedback conversations at the same time. In the other words this means that customer can give feedback with Hannotaatio at the same time when shes chatting with the team with an \ac{IM} tool. However, it must be noted that drawing the feedback requires some concentration from the customer, so even if it is possible to have multiple conversions at the same time, it may not be very pleasent.
 
 Hannotaatio supports also high \textbf{rehearsability}. Because the feedback is not transmitted to the developer team before customer chooses to publish it, customer has the ability to fine-tune the feedback drawing as long as she want. For feedback conversation this property of Hannotaatio is important, so that customer can fine-tune the message to be as clear and understandable as possible. Because feedback can be sometimes negative, it is also good that the customer has the ability to choose the wording carefully.
 
@@ -1324,7 +1329,7 @@ In the future development of Hannotaatio, Media Naturalness Theory should be tak
 \subsection{Hannotaatio MFT}
 \label{sec:hannotaatio_mft}
 
-In section~\ref{feedback_mft} the needs for feedback communication task were defined by the framework provided in the theory of Media Fitness \citep{higa2007}. In this section the mainly used communication tools, fax, telephone, email, instant messager, video conferencing system and face-to-face were used to evaluate their match to feedback communication task.
+In section~\ref{feedback_mft} the needs for feedback communication task were defined by the framework provided in the theory of Media Fitness \citep{higa2007}. In this section the mainly used communication tools, fax, telephone, email, \ac{IM}, video conferencing system and face-to-face were used to evaluate their match to feedback communication task.
 
 The feedback tool Hannotaatio can be evaluated by the same framework. As the needs of feedback communication task have been already defined in table~\ref{table:needs_for_feedback_communication_task} the same values can be used when evaluating Hannotaatio. The values of group I properties of Hannotaatio and the calculated match score are listed in table~\ref{table:hannotaatio_mft_scores}
 
@@ -1531,7 +1536,7 @@ Face-to-face communication is synchnorous and thus it does not support time and 
 
 In addition to time and location independet availability also other properties that are not available in face-to-face communication were valued. After time and location independent availability the next most valued properties were immediate feedback, natural symbol set, reprocessability and sharing abilities. Face-to-face communication supports immediate feedback and it has the most natural symbol set. However, it does not allow the feedback receiver to reprocess the feedback after it has been given. On the otherhand, sharing face-to-face feedback can not happen without information loss \citep{higa2007}. Sharing face-to-face message to another person who was not part in the original communication situation loses some part of the message that the people who is sharing the message is not able to convey, for example the exact voice tone and body language of the original message sender.
 
-Most e-communication media support well reprocessability and sharing abilities. The message sent via e-communication tools can be easily recorded and stored for later use whether the media is instant messaging system or email. The ability to record and store the sent feedback allows reprocessing of the message and sharing to others without any information loss. However, e-communication tools, such as email have problems to support immediate feedback and natural symbol set. For example, written text is not natural compared to face-to-face communication and even though sending and transmitting the email happens instantly, getting the response to the message might take hours, which lowers the immediancy of the feedback. There are e-communication tools which address these issues, for example video conferencing system, but being synchronous communication tool, video conferencing system does not allow time independent messaging.
+Most e-communication media support well reprocessability and sharing abilities. The message sent via e-communication tools can be easily recorded and stored for later use whether the media is \ac{IM} system or email. The ability to record and store the sent feedback allows reprocessing of the message and sharing to others without any information loss. However, e-communication tools, such as email have problems to support immediate feedback and natural symbol set. For example, written text is not natural compared to face-to-face communication and even though sending and transmitting the email happens instantly, getting the response to the message might take hours, which lowers the immediancy of the feedback. There are e-communication tools which address these issues, for example video conferencing system, but being synchronous communication tool, video conferencing system does not allow time independent messaging.
 
 It has to be noted that some of the properties are in contradiction with each other. For example, immediate feedback and time independent availability are contradictory properties. If another communication party is located for example other side of the globe, due to the time difference it is just impossible to give feedback at any time and expect to get immediate feedback. However, contradictory or not, both of the properties were highly desired by the interviewees.
 
@@ -1553,7 +1558,7 @@ The symbol set used in Hannotaatio is very natural and it fits well to the purpo
 
 Immediate feedback is a property that was valued by interviewees but is not well supported in Hannotaatio. The immediacy of the feedback in Hannotaatio is the same as in email, due to the fact that the notification to the feedback receiver is sent via email. Because of this, the communication about the feedback continues via email and email does not support immediate feedback.
 
-However, interviewees gave some improvement ideas that could address the issue of low immediacy of the feedback. One idea was to add an instant messaging pane to Hannotaatio. In the messaging pane, the feedback receiver could ask follow up questionss from the sender. This way the immediacy of feedback would raise to the next level, from email level to instant messaging level. The immediacy level of instant messaging is not as high as in face-to-face communication, but at least it is better than in email. In addition, the messaging pane would allow communication to continue in Hannotaatio, not in another communication media, namely email. This would supposedly lower the effort of communication media use, when users of the media should not use two media at the same time.
+However, interviewees gave some improvement ideas that could address the issue of low immediacy of the feedback. One idea was to add an \ac{IM} pane to Hannotaatio. In the messaging pane, the feedback receiver could ask follow up questionss from the sender. This way the immediacy of feedback would raise to the next level, from email level to instant messaging level. The immediacy level of instant messaging is not as high as in face-to-face communication, but at least it is better than in email. In addition, the messaging pane would allow communication to continue in Hannotaatio, not in another communication media, namely email. This would supposedly lower the effort of communication media use, when users of the media should not use two media at the same time.
 
 In conclusion it seems that from six most valued communication media properties, Hannotaatio is able to implement  five of them. The table~\ref{hannotaatios_support} lists the properties and Hannotaatio's support in a scale of low, medium, high.
 
