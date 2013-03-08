@@ -70,6 +70,13 @@
 
 \usepackage{acro}
 
+\newcommand{\acronym}[3]{
+\DeclareAcronym{#1}{
+    short = #1, 
+    long = #2,
+    alt = #3
+}}
+
 \DeclareAcronym{API}{
     short = API,
     long = application programming interface, 
@@ -115,36 +122,11 @@
     long = media synchronicity theory,
     alt = Media Synchronicity Theory
 }
-\DeclareAcronym{SI}{
-    short = SI,
-    long = social incluence,
-    alt = Social Influence
-}
-\DeclareAcronym{URL}{
-    short = URL,
-    long = uniform resource locator,
-    alt = Uniform Resource Locator
-}
-\DeclareAcronym{UUID}{
-    short = UUID,
-    long = universally unique identifier,
-    alt = Universally Unique Identifier
-}
-\begin{comment}
-\DeclareAcronym{XP}{
-    short = XP, 
-    long = extreme programming,
-    alt = Extreme Programming
-}
-\end{comment}
 
-\newcommand{\acronym}[3]{
-\DeclareAcronym{#1}{
-    short = #1, 
-    long = #2,
-    alt = #3
-}}
-
+\acronym{}{}{}
+\acronym{SI}{social incluence}{Social Influence}
+\acronym{URL}{uniform resource locator}{Uniform Resource Locator}
+\acronym{UUID}{universally unique identifier}{Universally Unique Identifier}
 \acronym{XP}{extreme programming}{Extreme Programming}
 
 %% Oma komento acronymeille
