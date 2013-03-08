@@ -136,6 +136,15 @@
     alt = Extreme Programming
 }
 
+%% Oma komento acronymeille
+
+\newcommand{\acronym}[3]{
+\DeclareAcronym{#1}{
+    short = #1, 
+    long = #2,
+    alt = #3
+}}
+
 %% No hyphenation
 \usepackage[none]{hyphenat}
 
