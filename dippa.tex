@@ -386,6 +386,7 @@ The results of the thesis are presented in Chapter 5. First, based on the theore
 \clearpage
 
 \section{Literature}
+\acresetall
 
 The studied literature is introduced in this chapter. The literature review focused on communication media, namely the four theories included in this thesis. The four theories are \ac{MRT}, \ac{MST}, \ac{MNT} and \ac{MFT}.
 
@@ -989,6 +990,7 @@ III-3 Cost & 3 (medium) \\
 
 \section{Research question}
 \label{sec:research_question}
+\acresetall
 
 \subsection{Objectives}
 
@@ -1019,6 +1021,7 @@ With this thesis, I want to answer to the following research question:
 \clearpage
 
 \section{Methods}
+\acresetall
 
 The methods to answer the research question are following. First, previous work in the field of communication and media is studied. From the existing literature, a theoretical background about the problem is gathered. Second, based on the previous work, a prototype is designed and built. Last, the prototype is evaluated using qualitative methods, namely semi-structured interviews.
 
@@ -1158,6 +1161,7 @@ The purpose of the analysis phase was to firstly find out a common themes shared
 \clearpage
 
 \section{Results}
+\acresetall
 
 In this chapter, I answer the research question set in Section~\ref{sec:research_question}: \textit{what are properties that make a communication tool effective for giving and receiving feedback in a agile software projects?} The research question is answered by analyzing the data collected with semi-structured interviews from people who have been using Hannotaatio feedback tool prototype.
 
@@ -1669,6 +1673,7 @@ voi luotettavuuden arviointi olla myös siellä.
 \clearpage
 
 \section{Discussion}
+\acresetall
 
 \subsection{Research limitation}
 
@@ -2281,108 +2286,5 @@ Alustus: Teen haastattelun diplomityötäni varten Aalto-yliopiston informaatiov
 \end{enumerate}
 
 \clearpage
-
-\begin{comment}
-\addcontentsline{toc}{section}{Liite A}
-\section{Esimerkki liitteestä\label{LiiteA}}
-%% Liitteiden kaavat, taulukot ja kuvat numeroidaan omana kokonaisuutenaan
-%%
-%% Equations, tables and figures have their own numbering in Appendices
-\renewcommand{\theequation}{A\arabic{equation}}
-\setcounter{equation}{0}  
-\renewcommand{\thefigure}{A\arabic{figure}}
-\setcounter{figure}{0}
-\renewcommand{\thetable}{A\arabic{table}}
-\setcounter{table}{0}
-
-Liitteet eivät ole opinnäytteen kannalta välttämättömiä ja 
-opinnäytteen tekijän on 
-kirjoittamaan ryhtyessään hyvä ajatella pärjäävänsä ilman liitteitä.
-Kokemattomat kirjoittajat, jotka ovat huolissaan
-tekstiosan pituudesta, paisuttavat turhan 
-helposti liitteitä pitääkseen tekstiosan pituuden annetuissa rajoissa.
-Tällä tavalla ei synny hyvää opinnäytettä.   
-
-Liite on itsenäinen kokonaisuus, vaikka se täydentääkin tekstiosaa.
-Liite ei siten ole pelkkä listaus, kuva tai taulukko, vaan 
-liitteessä selitetään aina sisällön laatu ja tarkoitus. 
-
-Liitteeseen voi laittaa esimerkiksi listauksia. Alla on 
-listausesimerkki tämän liitteen luomisesta. 
-
-%% Verbatim-ympäristö ei muotoile tai tavuta tekstiä. Fontti on monospace.
-%% Verbatim-ympäristön sisällä annettuja komentoja ei LaTeX käsittele. 
-%% Vasta \end{verbatim}-komennon jälkeen jatketaan käsittelyä.
-\begin{verbatim}
-    \clearpage
-	\appendix
-	\addcontentsline{toc}{section}{Liite A}
-	\section*{Liite A}
-	...
-	\thispagestyle{empty}
-	...
-	tekstiä
-	...
-	\clearpage
-\end{verbatim}
-
-Kaavojen numerointi muodostaa liitteissä oman kokonaisuutensa:
-\begin{eqnarray}
-d \wedge A  &=& F, \label{liitekaava1}\\
-d \wedge F  &=& 0. \label{liitekaava2}
-\end{eqnarray}
-
-
-\clearpage
-\addcontentsline{toc}{section}{Liite B}
-\section{Toinen esimerkki liitteestä\label{LiiteB}}
-
-%% Liitteiden kaavat, taulukot ja kuvat numeroidaan omana kokonaisuutenaan
-%%
-%% Equations, tables and figures have their own numbering in Appendices
-\renewcommand{\theequation}{B\arabic{equation}}
-\setcounter{equation}{0}  
-\renewcommand{\thefigure}{B\arabic{figure}}
-\setcounter{figure}{0}
-\renewcommand{\thetable}{B\arabic{table}}
-\setcounter{table}{0}
-
-Liitteissä voi myös olla kuvia, jotka
-eivät sovi leipätekstin joukkoon:
-%% Ympäristön figure parametrit htb pakottavat
-%% kuvan tähän, eikä LaTeX yritä siirrellä niitä
-%% hyväksi katsomaansa paikkaan. 
-%% Ympäristöä center voi käyttää \centering-
-%% komennon sijaan
-%%
-%% Example of a figure, note the use of htb parameters which force
-%% the figure to be inserted here
-\begin{figure}[htb]
-\begin{center}
-\includegraphics[height=8cm]{kuva2}
-\end{center}
-\caption{Kuvateksti, jossa on liitteen numerointi \label{liitekuva}}
-\end{figure}
-%%
-Liitteiden taulukoiden numerointi on kuvien ja kaavojen kaltainen:
-\begin{table}[htb]
-\caption{Taulukon kuvateksti. \label{liitetaulukko}}
-\begin{center}
-\fbox{
-\begin{tabular}{lp{0.5\linewidth}}
-9.00--9.55  & Käytettävyystestauksen tiedotustilaisuus (osanottajat
-ovat saaneet sähköpostitse valmistautumistehtävät, joten tiedotustilaisuus
-voidaan pitää lyhyenä).\\
-9.55--10.00 & Testausalueelle siirtyminen
-\end{tabular}}
-\end{center}
-\end{table}
-Kaavojen numerointi muodostaa liitteissä oman kokonaisuutensa:
-\begin{eqnarray}
-T_{ik} &=& -p g_{ik} + w u_i u_k + \tau_{ik},  \label{liitekaava3} \\
-n_i    &=& n u_i + v_i.                        \label{liitekaava4}
-\end{eqnarray}
-
-\end{comment}
 
 \end{document}
