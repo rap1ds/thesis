@@ -65,6 +65,19 @@
 \setlength{\topmargin}{25mm-\headheight-\headsep}
 \setlength{\textheight}{23cm}
 
+\newenvironment{wide}{%
+  \begin{list}{}{%
+      \setlength{\topsep}{0pt}%
+      \addtolength{\leftmargin}{-2cm}%
+      \addtolength{\rightmargin}{-2cm}%
+      \setlength{\listparindent}{\parindent}%
+      \setlength{\itemindent}{\parindent}%
+      \setlength{\parsep}{\parskip}}%
+  \item[]%
+}{%
+  \end{list}%
+}
+
 %% Oma quote komento
 
 \newcommand{\q}[2]{
@@ -2399,7 +2412,7 @@ Preface: I am doing this interview for my Master's Thesis at Aalto University In
 \begin{comment}
 
 % \addcontentsline{toc}{section}{Appendix A}
-\section{Haastattelukysymykset}
+\section{Haastatkysymykset}
 \label{appendix:haastattelu_kysymykset}
 
 Alustus: Teen haastattelun diplomityötäni varten Aalto-yliopiston informaatioverkostojen koulutusohjelmaan. Haastattelulla pyrin selvittämään Hannotaatio palautetyökalun käyttöä sekä palautteen antamista yleisemmin ohjelmistoprojekteissa. Haastattelu nauhoitetaan. 
