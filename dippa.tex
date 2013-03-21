@@ -1082,6 +1082,24 @@ Good usability was one of the main design requirement when requirements to Hanno
 
 A special kind of site capturing technique was used to accomplish the capturing without any browser plugins. Taking a screenshot image requires external browser plugins, such as Java applets or browser add-ons. However, Hannotaatio does not take screenshot, even though the result looks like screenshot image. Instead, Hannotaatio saves the current \ac{DOM} tree of the page and associated \ac{CSS} styles. The \ac{DOM} source and \ac{CSS} styles are saved to Hannotaatio servers and when user views the feedback, the site is rerendered with the saved source.
 
+\subsection{Design and implementation of the prototype}
+
+Based on the theoretical background, a prototype feedback tool was evaluated to test the hypothesis. The prototype was built by a group of student from Aalto University for a Software Development Project course. I was part of the student group and my role was to work as a project manager and an architect. Besides me, the team included seven other students, who are studying Computer Science or Information Networks.
+
+Finnish IT-company Futurice was the sponsor of the student project. Futurice is a lean IT development and consultancy company, which provides web, mobile and enterprise solutions and digital strategy consulting. The project customer was a Futurice employee. The customer helped the team to prioritize features and was the Product Owner of the project. 
+
+Before the project started, the company had identified a problem in their feedback communication with the customers. The problem was that customers were using inefficient tools for giving feedback. They were for example writing long emails describing textually parts of the application that would have been easier to point out visually. The textual description of a application feature is both heavy for the feedback sender and hard to interpret for the feedback receiver. It also increased the possibility of misunderstandings.
+
+On the other hand, some clients were actually using visual feedback by first taking screenshot of the application, then attaching it as a part of a Microsoft Word\footnote{Document and Word Processing Software | Microsoft Word - Office.com, http://office.microsoft.com/en-us/word/} or Microsoft PowerPoint\footnote{PowerPoint Presentation and Slide Software - Office.com, http://office.microsoft.com/en-us/powerpoint} document and then drawing arrows on the screenshot in Word or PowerPoint. After the drawing was ready, the document was sent to developers as a email attachment. 
+
+Even though the visual ascpect of this method added a lot a value, there were clear issues. First, it was laborious for the feedback sender. Due to this, some feedback may left unsent, because the customer did not have time or interest to do the laborious work. Second, the developers were not too delighted to receive Word or PowerPoint attachments, since they are somewhat difficult to open. Some developers did not have Word or PowerPoint installed. Third, it is well known that sending Word or PowerPoint attachments is a security risk \citep{tyson2011}.
+
+The goal of the project was to build a working production ready prototype for Futurice to try out a new method to accelerate the feedback communication in their projects by solving the problems mentioned above. The goal was to both increase the amount of feedback from Futurice's customers and make the feedback communication more specific.
+
+After the prototype was completed, it has been used in Futurice's projects. There is no clear number how many projects have adapted the prototype but presumably, the number is between 5 and 15. Since the prototype is open for public, other companies have used the prototype in their projects. Again, no clear numbers are available but most likely the number is about the same, from 5 to 10.
+
+In addition to being a great feedback tool that can be used in real-life projects, the prototype also served another important function. It provided a valuable data from the real-world about the usage of the feedback tool. This data is utilized in this thesis by interviewing the users of Hannotaatio, both from Futurice and from other companies.
+
 \subsection{Application architecture}
 
 Hannotaatio is implemented using mainly JavaScript and Ruby On Rails. The editor and capturer are implemented with JavaScript and HTML5. For old browser compatibility, some parts of the capturer utilize Adobe Flash for capturing images with browsers that do not support HTML5 Canvas elements. The editor uses popular JavaScript library Raphael.js for the drawings. Raphael.js is the most used library for vector graphics in JavaScript.
@@ -1306,24 +1324,6 @@ In this thesis, the organizational context is Futurice Ltd\footnote{Web, mobile 
 A literature review is done in order to gather theoretical understanding about properties of effective communication media. In this paper the following communication media theories are included: \ac{MRT}, \ac{MST}, \ac{MNT} and \ac{MFT}. 
 
 Studying these theories should result in understanding of the properties that are relevant for a feedback tool prototype. Understanding the properties that affect on the effectiveness of a communication media and understanding the reasons why people select a medium over another should help us to build the prototype solution to address the issues identified in the organizational context.
-
-\subsection{Design and implementation of the prototype}
-
-Based on the theoretical background, a prototype feedback tool was evaluated to test the hypothesis. The prototype was built by a group of student from Aalto University for a Software Development Project course. I was part of the student group and my role was to work as a project manager and an architect. Besides me, the team included seven other students, who are studying Computer Science or Information Networks.
-
-Finnish IT-company Futurice was the sponsor of the student project. Futurice is a lean IT development and consultancy company, which provides web, mobile and enterprise solutions and digital strategy consulting. The project customer was a Futurice employee. The customer helped the team to prioritize features and was the Product Owner of the project. 
-
-Before the project started, the company had identified a problem in their feedback communication with the customers. The problem was that customers were using inefficient tools for giving feedback. They were for example writing long emails describing textually parts of the application that would have been easier to point out visually. The textual description of a application feature is both heavy for the feedback sender and hard to interpret for the feedback receiver. It also increased the possibility of misunderstandings.
-
-On the other hand, some clients were actually using visual feedback by first taking screenshot of the application, then attaching it as a part of a Microsoft Word\footnote{Document and Word Processing Software | Microsoft Word - Office.com, http://office.microsoft.com/en-us/word/} or Microsoft PowerPoint\footnote{PowerPoint Presentation and Slide Software - Office.com, http://office.microsoft.com/en-us/powerpoint} document and then drawing arrows on the screenshot in Word or PowerPoint. After the drawing was ready, the document was sent to developers as a email attachment. 
-
-Even though the visual ascpect of this method added a lot a value, there were clear issues. First, it was laborious for the feedback sender. Due to this, some feedback may left unsent, because the customer did not have time or interest to do the laborious work. Second, the developers were not too delighted to receive Word or PowerPoint attachments, since they are somewhat difficult to open. Some developers did not have Word or PowerPoint installed. Third, it is well known that sending Word or PowerPoint attachments is a security risk \citep{tyson2011}.
-
-The goal of the project was to build a working production ready prototype for Futurice to try out a new method to accelerate the feedback communication in their projects by solving the problems mentioned above. The goal was to both increase the amount of feedback from Futurice's customers and make the feedback communication more specific.
-
-After the prototype was completed, it has been used in Futurice's projects. There is no clear number how many projects have adapted the prototype but presumably, the number is between 5 and 15. Since the prototype is open for public, other companies have used the prototype in their projects. Again, no clear numbers are available but most likely the number is about the same, from 5 to 10.
-
-In addition to being a great feedback tool that can be used in real-life projects, the prototype also served another important function. It provided a valuable data from the real-world about the usage of the feedback tool. This data is utilized in this thesis by interviewing the users of Hannotaatio, both from Futurice and from other companies.
 
 \begin{comment}
 \begin{itemize}
