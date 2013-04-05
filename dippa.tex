@@ -1147,7 +1147,7 @@ After the installation of Hannotaatio, the user is able to capture the website i
 
 Good usability was one of the main design requirement for Hannotaatio. This has been addressed by for example selecting technologies that do not require user to install any browser plugin. In other words, the customer does not have to install anything on her computer in order to be able to use Hannotaatio. This lowers the barrier to start using Hannotaatio for the first time.
 
-A special kind of site capturing technique was used to accomplish the capturing without any browser plugins. Taking a screenshot image requires external browser plugins, such as Java applets or browser add-ons. However, Hannotaatio does not take screenshot, even though the result looks like screenshot image. Instead, Hannotaatio saves the current \ac{DOM} tree of the page and associated \ac{CSS} styles. The \ac{DOM} source and \ac{CSS} styles are saved to Hannotaatio servers and when user views the feedback, the site is rerendered with the saved source.
+A special kind of site capturing technique was used to accomplish the capturing without any browser plugins. Taking a screenshot image requires external browser plugins, such as Java applets or browser add-ons. However, Hannotaatio does not take screenshot, even though the result looks like a screenshot image. Instead, Hannotaatio saves the current state of the \ac{DOM} tree of the page and the associated \ac{CSS} styles. The \ac{DOM} source and the \ac{CSS} styles are send to Hannotaatio server where they are stored. When the user views the feedback, the site is rerendered from the saved source.
 
 \subsection{Design and implementation of the prototype}
 
