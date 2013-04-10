@@ -1220,6 +1220,8 @@ In addition to being a great feedback tool that can be used in real-life project
 
 \subsection{Application architecture}
 
+There are three main parts in Hannotaatio application architecture: back end server, front end capturer and front end editor. The back end \emph{server} stores the captured websites and annotations and serves them to the front end by request. The \emph{capturer} script is injected to the website which will be captured and it is responsible of capturing the website and sending it to the back end server. The \emph{editor} is responsible of loading the captured website and providing the annotation tools for the user. 
+
 Hannotaatio is implemented using mainly JavaScript and Ruby On Rails. The editor and capturer are implemented with JavaScript and HTML5. For old browser compatibility, some parts of the capturer utilize Adobe Flash for capturing images with browsers that do not support HTML5 Canvas elements. The editor uses popular JavaScript library Raphael.js for the drawings. Raphael.js is the most used library for vector graphics in JavaScript.
 
 Hannotaatio backend is implemented with Ruby On Rails. The captured sources, such as \ac{DOM} source, \ac{CSS} styles and images are stored to file system, but information about saved feedback, notification emails and such are saved to MySQL database. The backend implements RESTful \ac{API}. The \ac{API} uses JSON format to transfer data between the front-end application and the backend.
