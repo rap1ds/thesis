@@ -1736,56 +1736,13 @@ Clearly, with the current available technology, there are no communication media
 As a side note, in the future if humankind invents somekind of time travelling capabilities, a new kind of communication media which would be both synchronous and asynchronous could be created.\emph{Ööö, poistanko tän lauseen?}
 \end{comment}
 
+\begin{comment}
 \subsection{How well does Hannotaatio support the properties that are important according to the interviewees?}
 
 \q{2}{I think it [physical distance to customer] was pretty determining factor. Because we didn't have possibility to it [face-to-face communication], we had to find the next best available alternative, and it was Hannotaatio.}
 
 \q{5}{Interviewer: How did the use of Hannotaatio change the feedback communication in the project? \\ Interviewee: Well, of course it made the communication much more precise. Because earlier it [feedback communication] was like, "this and that area", "this and that field", "should we put there this and that". Instead of that you have the screenshot and the arrow pointing to the right spot.}
-
-If we review the properties that were, according to the interviewees, the most important for a feedback tool, it can be seen that Hannotaatio supports well the properties the interviewees valued the most. The most highly valued properties were time and location independent availability, immediate feedback, natural symbol set, reprocessability and sharing abilities. 
-
-Hannotaatio supports extremely well reprocessability, sharing, available time and available location. In addition to these properties, a lot of development work has been done to support natural symbol set and immediate feedback. 
-
-The visual symbol set used in Hannotaatio is natural and it fits well to the purpose of giving feedback about software product. According to many interviewees, it is much easier to take the screenshot using Hannotaatio than explaining the problem in email. In fact, I argued that in some cases the symbol set used in Hannotaatio is more natural than the symbol set available in face-to-face communication. If the face-to-face communication happens in an environment where neither printed screenshots or a computer with the software under the feedback conversation is running, the communication parties have to verbally explain different parts of the application. This task can be troublesome. Much easier way to discribe a problem in a software is just point the location from the screenshot. This idea is also supported by \ac{MST}. \citet{dennis2008} gives an example of this: "Imagine that you are trying to describe how to perform a physical activity on a Web site. A verbal description alone is likely to be less effective than a visual demonstration and a verbal description or a series of annotated screen shots with a written description."
-
-Immediate feedback was valued by interviewees but is not well supported in Hannotaatio. The immediacy of the feedback in Hannotaatio is the same as in email, due to the fact that the notification to the feedback receiver is sent via email. Because of this, after sending the feedback the conversation continues via email and email does not support immediate feedback.
-
-However, interviewees gave some improvement ideas that could address the issue of low immediacy of the feedback. One idea was to add an \acl{IM} pane to Hannotaatio. In the messaging pane, the feedback receiver could ask follow up questionss from the sender. This way the immediacy of feedback would raise to the next level, from email level to \ac{IM} level. The immediacy level of \ac{IM} is not as high as in face-to-face communication, but at least it is better than in email. In addition, the messaging pane would allow communication to continue in Hannotaatio, not in another communication media, namely email. This would supposedly lower the effort of communication media use, when users of the media do not need use two media at the same time.
-
-In conclusion it seems that from the six most valued communication media properties, Hannotaatio is able to implement  five of them. The table~\ref{table:hannotaatios_support} lists the properties and Hannotaatio's support in a scale of low, medium, high.
-
-\begin{table}[!h]
-% increase table row spacing, adjust to taste
-\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-\caption{Hannotaatio's support for properties valued by the interviewees}
-\label{table:hannotaatios_support}
-\centering
-% Some packages, such as MDW tools, offer better commands for making tables
-% than the plain LaTeX2e tabular which is used here.
-\begin{tabular}{|p{10cm}|p{5cm}|}
-\hline
-\textbf{Communication media property} & \textbf{Hannotaatio's support} \\
-\hline
-\textbf{Time independent availability} & High \\
-\hline
-\textbf{Location independent availability} & High \\
-\hline
-\textbf{Immediate feedback} & Low \\
-\hline
-\textbf{Natural symbol set} & High \\
-\hline
-\textbf{Reprocessability} & High \\
-\hline
-\textbf{Sharing} & High \\
-\hline
-\end{tabular}
-\end{table}
-
 \end{comment}
-
-According to interviewees, Hannotaatio seems to be effective communication tool. No one said that it would surpass face-to-face communication, but many said Hannotaatio is "the second best option" if face-to-face is not possible.
 
 \begin{comment}
 Tuloksia:
@@ -1842,9 +1799,52 @@ From the six most valued properties it can be seen that face-to-face communicati
 
 \subsection{Evaluation of Hannotaatio in a real-life software projects}
 
-A prototype of a feedback communication tool, Hannotaatio, was implemented to answer the need for a better feedback communication media. Compared to email, which is according to the interviewees one of the most used tool for feedback, Hannotaatio adds an important visual element to the communication media. According to the media theories and interviewees, the added visual element makes Hannotaatio more natural than email, which symbol set is constructed from written text. 
+A prototype of a feedback communication tool, Hannotaatio, was implemented to answer the need for a better feedback communication media. Compared to email, which is according to the interviewees one of the most used tool for feedback, Hannotaatio adds an important visual element to the communication media. According to the media theories and interviewees, the added visual element makes Hannotaatio more natural than email, which symbol set is constructed from written text.
 
 I argue that Hannotaatio supports well five of the six most valued feedback tool property. This makes it a noticeable feedback communication medium. However, Hannotaatio supports poorly immediate feedback, which was one of the most valued property and the reason, why face-to-face communication was ranked the most efficient media by the interviewees.
+
+If we review the properties that were, according to the interviewees, the most important for a feedback tool, it can be seen that Hannotaatio supports well the properties the interviewees valued the most. The most highly valued properties were time and location independent availability, immediate feedback, natural symbol set, reprocessability and sharing abilities. 
+
+Hannotaatio supports extremely well reprocessability, sharing, available time and available location. In addition to these properties, a lot of development work has been done to support natural symbol set and immediate feedback. 
+
+The visual symbol set used in Hannotaatio is natural and it fits well to the purpose of giving feedback about software product. According to many interviewees, it is much easier to take the screenshot using Hannotaatio than explaining the problem in email. In fact, I argued that in some cases the symbol set used in Hannotaatio is more natural than the symbol set available in face-to-face communication. If the face-to-face communication happens in an environment where neither printed screenshots or a computer with the software under the feedback conversation is running, the communication parties have to verbally explain different parts of the application. This task can be troublesome. Much easier way to discribe a problem in a software is just point the location from the screenshot. This idea is also supported by \ac{MST}. \citet{dennis2008} gives an example of this: "Imagine that you are trying to describe how to perform a physical activity on a Web site. A verbal description alone is likely to be less effective than a visual demonstration and a verbal description or a series of annotated screen shots with a written description."
+
+Immediate feedback was valued by interviewees but is not well supported in Hannotaatio. The immediacy of the feedback in Hannotaatio is the same as in email, due to the fact that the notification to the feedback receiver is sent via email. Because of this, after sending the feedback the conversation continues via email and email does not support immediate feedback.
+
+However, interviewees gave some improvement ideas that could address the issue of low immediacy of the feedback. One idea was to add an \acl{IM} pane to Hannotaatio. In the messaging pane, the feedback receiver could ask follow up questionss from the sender. This way the immediacy of feedback would raise to the next level, from email level to \ac{IM} level. The immediacy level of \ac{IM} is not as high as in face-to-face communication, but at least it is better than in email. In addition, the messaging pane would allow communication to continue in Hannotaatio, not in another communication media, namely email. This would supposedly lower the effort of communication media use, when users of the media do not need use two media at the same time.
+
+In conclusion it seems that from the six most valued communication media properties, Hannotaatio is able to implement  five of them. The table~\ref{table:hannotaatios_support} lists the properties and Hannotaatio's support in a scale of low, medium, high.
+
+\begin{table}[!h]
+% increase table row spacing, adjust to taste
+\renewcommand{\arraystretch}{1.3}
+% if using array.sty, it might be a good idea to tweak the value of
+% \extrarowheight as needed to properly center the text within the cells
+\caption{Hannotaatio's support for properties valued by the interviewees}
+\label{table:hannotaatios_support}
+\centering
+% Some packages, such as MDW tools, offer better commands for making tables
+% than the plain LaTeX2e tabular which is used here.
+\begin{tabular}{|p{10cm}|p{5cm}|}
+\hline
+\textbf{Communication media property} & \textbf{Hannotaatio's support} \\
+\hline
+\textbf{Time independent availability} & High \\
+\hline
+\textbf{Location independent availability} & High \\
+\hline
+\textbf{Immediate feedback} & Low \\
+\hline
+\textbf{Natural symbol set} & High \\
+\hline
+\textbf{Reprocessability} & High \\
+\hline
+\textbf{Sharing} & High \\
+\hline
+\end{tabular}
+\end{table}
+
+According to interviewees, Hannotaatio seems to be effective communication tool. No one said that it would surpass face-to-face communication, but many said Hannotaatio is "the second best option" if face-to-face is not possible.
 
 In order to improve Hannotaatio to surpass face-to-face communication, the problem of synchronous versus asynchronous communication has to be solved. Interviewees valued both synchronous properties such as immediate feedback and asynchronous properties such as time and location independent availability. Obviously, with the current technology, it is impossible to build a communication tool that would be both synchronous, providing support for immediate feedback, and asynchronous, providing ability to send the message when ever, where ever. Communication tool that would be both synchronous and asynchronous at the same time should have some kind of time travelling capabilities.
 
