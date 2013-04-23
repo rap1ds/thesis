@@ -1334,7 +1334,11 @@ Image capturing is a key feature in Hannotaatio. The lack of image capturing in 
 
 Image capturing was one of the most technically challenging feature in Hannotaatio. The images are captured with HTML5 Canvas. The Canvas element encodes the binary image data to text by using Base64 binary-to-text encoding \citep{rfc4648}. After the encoding the image data is sent to the back end server. The back end server decodes the image back to PNG or JPG image. If the browser does not support Canvas element, Adobe Flash is used as a fallback solution. An invisible Flash component which is injected to the page does the Base64 encoding of the image and passes it to the browser. The browser then sends the encoded image data to the backend server the same way it would do if the Canvas element was available.
 
+\clearpage
+
 \section{Theoretical evaluation of Hannotaatio}
+\label{sec:theoretical_evaluation}
+\acresetall
 
 In this section the prototype is evaluated using the theories introduced in chapter~\ref{sec:media_theories}. The theories introduced in chapter~\ref{sec:media_theories} were used to explain the nature of feedback communication and the properties in communication media that are beneficial for feedback communication. In this section the Hannotaatio prototype is evaluated with each of the theories. 
 
