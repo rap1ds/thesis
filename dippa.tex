@@ -1144,7 +1144,7 @@ Before the results of the interviews are presented, the theoretical answer to th
 In this chapter, the prototype tool for giving feedback is also introduced in detail. The feedback tool was created to support the properties, that are, in theory, important for a feedback communication tool.
 \end{comment}
 
-In this section the prototype feedback tool Hannotaatio is introduced. First, the design and implementation process of the prototype is described. Second, the application architecture and the implemented features are presented. Last, the prototype is evaluated using the theories introduced in chapter~\ref{sec:media_theories}. The theories introduced in chapter~\ref{sec:media_theories} were used to explain the nature of feedback communication and the properties in communication media are beneficial for feedback communication. In this section the Hannotaatio prototype is evaluated with each of the theories. At the end of the section the result of this evaluation is presented.
+In this section the prototype feedback tool Hannotaatio is introduced. First, the design and implementation process of the prototype is described. Second, the application architecture and the implemented features are presented.
 
 \subsection{Hannotaatio introduction}
 
@@ -1333,6 +1333,10 @@ The team can now access to the published feedback. Besides seeing the drawn feed
 Image capturing is a key feature in Hannotaatio. The lack of image capturing in products that existed before Hannotaatio was one of the key reasons why Hannotaatio was implemented in the first place. In practice, image capturing means that in addition to the captured \ac{DOM} tree, the images on the website are also captured. Without image capturing, the images in the captured website are only referred by the image location \ac{URL}. If the image location is not publicly available, the referred image can not be displayed. In practice, the lack of image capturing prevents proper use of Hannotaatio in a website that is not publicly available.
 
 Image capturing was one of the most technically challenging feature in Hannotaatio. The images are captured with HTML5 Canvas. The Canvas element encodes the binary image data to text by using Base64 binary-to-text encoding \citep{rfc4648}. After the encoding the image data is sent to the back end server. The back end server decodes the image back to PNG or JPG image. If the browser does not support Canvas element, Adobe Flash is used as a fallback solution. An invisible Flash component which is injected to the page does the Base64 encoding of the image and passes it to the browser. The browser then sends the encoded image data to the backend server the same way it would do if the Canvas element was available.
+
+\section{Theoretical evaluation of Hannotaatio}
+
+
 
 \subsection{Evaluation of Hannotaatio with media richness theory}
 
